@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient">
+
+    <!-- Toolbar en haut -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@android:color/holo_blue_dark"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:layout_marginBottom="20dp"
+        />
+    <!-- Titre à gauche dans la Toolbar -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="E-Gestionnaire"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        />
+
+    <!-- Logo centré dans la Toolbar -->
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:contentDescription="Image"
+        android:src="@drawable/logo" />
+
+
+
+    <!-- Conteneur principal pour les boutons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="32dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:text="Choisissez une option"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/addStudentButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ajouter un Étudiant"
+            android:backgroundTint="@color/colorAccent"
+            android:textColor="@android:color/white"
+            android:padding="12dp"
+            android:layout_marginBottom="1dp"
+            android:textStyle="bold"
+            android:drawableStart="@drawable/ic_add"
+            android:drawablePadding="8dp" />
+
+        <Button
+            android:id="@+id/viewStudentsButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Afficher les Étudiants"
+            android:backgroundTint="@color/colorAccent"
+            android:textColor="@android:color/white"
+            android:padding="12dp"
+            android:textStyle="bold"
+            android:drawableStart="@drawable/ic_view"
+            android:drawablePadding="8dp"
+            android:layout_marginBottom="190dp"/>
+
+    </LinearLayout>
+</RelativeLayout>

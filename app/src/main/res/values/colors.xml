@@ -1,0 +1,7 @@
+<resources>
+    <color name="colorPrimary">#6200EE</color> <!-- Couleur principale -->
+    <color name="colorPrimaryDark">#3700B3</color> <!-- Couleur sombre principale -->
+    <color name="colorAccent">#03DAC5</color> <!-- Couleur d'accent -->
+    <color name="colorBackground">#FFFFFF</color> <!-- Couleur de fond -->
+    <color name="colorText">#000000</color> <!-- Couleur du texte -->
+</resources>

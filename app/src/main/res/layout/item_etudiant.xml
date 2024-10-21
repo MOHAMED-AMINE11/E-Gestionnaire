@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:gravity="center_vertical"
+    android:background="?android:attr/selectableItemBackground">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageEtudiant"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginRight="4dp"
+        android:clipToOutline="true"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/nomEtudiant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/prenomEtudiant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#555"
+            android:layout_marginLeft="10dp"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/villeEtudiant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#777"
+            android:layout_marginLeft="10dp"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btnModifier"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="#1976D2"
+            android:gravity="center"
+            android:text="Modifier"
+            android:textColor="#FFF"
+            android:textSize="18sp" />
+    </LinearLayout>
+</LinearLayout>

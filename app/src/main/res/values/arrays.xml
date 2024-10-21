@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="ville">
+        <item>Casablanca</item>
+        <item>Rabat</item>
+        <item>Tanger</item>
+        <item>Safi</item>
+        <item>Mohammedia</item>
+        <item>Essaouira</item>
+        <item>Marrakech</item>
+        <item>Fès</item>
+    </string-array>
+</resources>
